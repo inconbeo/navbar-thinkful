@@ -15,6 +15,9 @@ body {
     border-radius: 2px;
     box-shadow: 0 0 2px #eeeeef;
     padding: 10px 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 .hamburger-stripe {
@@ -23,5 +26,147 @@ body {
     margin-bottom: 5px;
 }
 
-/* Add your CSS here */
+
+.container-off {
+    display: none;
+}
+
+.logo {
+    padding: 30px 20px;
+    position: absolute;
+    left: 10px;
+    
+}
+
+.nav-dropdown-hidden {
+    display: none;
+}
+
+.nav-dropdown {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f9fbff;
+    
+}
+
+img {
+    display: none;
+}
+
+h4 {
+    padding: 8px 18px;
+}
+
+
+
+@media (min-width: 733px) {
+    .hamburger {
+        display: none;
+    }
+
+    .container-off {
+        display: initial;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        
+    }
+
+    .logo {
+        padding: 30px 20px;
+        position: absolute;
+        left: 10px;
+        
+    }
+    
+    .container1 {
+        display: flex;
+        list-style-type: none;
+        position: absolute;
+     }
+    
+    .container2  {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding-left: 300px;
+    position: absolute;
+    right: 10px;
+    
+    }
+    
+    a h3 {
+        color: #6799ff;
+        text-transform: uppercase;
+        padding: 0px 20px;
+        white-space: nowrap;
+        
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 15px;
+    }
+    
+    .container1 li:hover, .container2 li:hover {
+        border-bottom: 1px solid #6799ff;
+        
+    }
+    
+    .container-courses, .container-how-it-works {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding-top: 10px;
+                
+    }
+    
+    img {
+        width: 60px;
+        display: initial;
+    }
+
+    .nav-dropdown {
+        background: #f9fbff;
+        position: absolute;
+        width: 100%;
+        
+     }
+
+    h4 {
+        padding: 8px 8px;
+        
+    }
+
+    .nav-dropdown-items {
+        text-align: center;
+        width: 100%;
+    }
+
+    
+
+}
+
+@media (min-width: 733px) and (max-width: 767px) {
+    .nav-items > h3 {
+        
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
